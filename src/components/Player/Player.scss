@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.player-card {
+  background-color: $cardColor;
+  color: whitesmoke;
+  width: 30rem !important;
+  border-radius: 20px;
+}
+
+.player-card:hover {
+  transform: scale(1.025); 
+  transition-duration: 1s;
+}
+
+.card-img-top{
+  object-fit: contain
+}
