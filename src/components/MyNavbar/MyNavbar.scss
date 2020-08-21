@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+nav {
+  background-color: $navbarColor;
+}
+
+a {
+  color: $textColor !important;
+}

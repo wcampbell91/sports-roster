@@ -1,0 +1,38 @@
+{
+  "player1":{
+    "name": "Jordan Bell",
+    "position": "Forward",
+    "imageUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628395.png",
+    "uid": "Nydzmd1eAqYwxA49ixxx421JyfQ2"
+  },
+  "player2":{
+    "name": "Kevin Love",
+    "position": "Forward-Center",
+    "imageUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201567.png",
+    "uid": "Nydzmd1eAqYwxA49ixxx421JyfQ2"
+  },
+  "player3":{
+    "name": "Andre Drummond",
+    "position": "Center",
+    "imageUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203083.png",
+    "uid": "Nydzmd1eAqYwxA49ixxx421JyfQ2"
+  },
+  "player4":{
+    "name": "Larry Nance Jr.",
+    "position": "Forward-Center",
+    "imageUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626204.png",
+    "uid": "Nydzmd1eAqYwxA49ixxx421JyfQ2"
+  },
+  "player5":{
+    "name": "alfonso Mckinnie",
+    "position": "Forward",
+    "imageUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628035.png",
+    "uid": "Nydzmd1eAqYwxA49ixxx421JyfQ2"
+  },
+  "player6":{
+    "name": "Tristan Thompson",
+    "position": "Center-Forward",
+    "imageUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202684.png",
+    "uid": "Nydzmd1eAqYwxA49ixxx421JyfQ2"
+  }
+}

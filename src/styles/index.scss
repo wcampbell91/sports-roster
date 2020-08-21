@@ -1,7 +1,9 @@
 @import 'variables';
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-
+@import '../components/Player/Player.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 body {
-  background-color: $favColor;
+  background-color: $bgColor;
+  font-family: 'Oswald', sans-serif;
 }
