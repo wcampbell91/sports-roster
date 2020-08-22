@@ -7,10 +7,12 @@ const baseUrl = apiKeys.firebaseConfig.databaseURL;
 
 const getPlayers = () => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/players.json`)
-    .then(({ data }) => resolve(utils.converFirebaseCollection(data)))
+    .then(({ data }) => resolve(utils.convertFirebaseCollection(data)))
     .catch((err) => reject(err));
 });
 
 const deletePlayer = (playerId) => axios.delete(`${baseUrl}/players/${playerId}.json`);
 
-export default { getPlayers, deletePlayer };
+const updatePlayer = (playerId, updatedPlayer) => axios.post(`${baseUrl}/players/${playerId}.json`, updatedPlayer);
+
+export default { getPlayers, deletePlayer, updatePlayer };
