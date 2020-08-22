@@ -1,4 +1,4 @@
-const converFirebaseCollection = (data) => {
+const convertFirebaseCollection = (data) => {
   const objectCollection = data;
   const arrayCollection = [];
 
@@ -12,4 +12,4 @@ const converFirebaseCollection = (data) => {
   return arrayCollection;
 };
 
-export default { converFirebaseCollection };
+export default { convertFirebaseCollection };

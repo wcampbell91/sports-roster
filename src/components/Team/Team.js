@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import 'firebase/auth';
 
 import playerData from '../../helpers/data/playerData';
-
 import Player from '../Player/Player';
 
 import './Team.scss';
@@ -17,16 +16,30 @@ class Team extends React.Component {
     players: [],
   }
 
-  componentDidMount() {
+  getPlayers = () => {
     playerData.getPlayers()
       .then((response) => this.setState({ players: response }))
       .catch((err) => console.error('get players broke', err));
+  };
+
+  componentDidMount() {
+    this.getPlayers();
   }
+
+  deletePlayer = (playerId) => {
+    playerData.deletePlayer(playerId)
+      .then(() => this.getPlayers())
+      .catch((err) => console.error('delete player broke!', err));
+  };
+
+  editPlayer = (player) => {
+
+  };
 
   render() {
     const { players } = this.state;
 
-    const playerCards = players.map((player) => <Player key={player.id} player={player} />);
+    const playerCards = players.map((player) => <Player key={player.id} player={player} deletePlayer={this.deletePlayer} />);
 
     return (
       <div className="Team">
